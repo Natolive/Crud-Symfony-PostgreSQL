@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class HealthController extends AbstractController
 {
-    #[Route('/health', name: 'app_health')]
+    #[Route('/health', name: 'health', methods: ['GET'])]
     public function index(): JsonResponse
     {
         return $this->json([

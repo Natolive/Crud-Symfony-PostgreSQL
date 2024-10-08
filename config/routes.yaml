@@ -2,4 +2,5 @@ controllers:
     resource:
         path: ../src/Controller/
         namespace: App\Controller
+        condition: "request.isXmlHttpRequest()"
     type: attribute
